@@ -1,0 +1,116 @@
+---
+
+## ✅ 2. README para **Práctico Integrador: ReactJS + NodeJS (Fullstack)**
+
+```markdown
+# 🧑‍💻 Práctico Integrador: CRUD Fullstack (React + Node.js)
+
+Este proyecto es una aplicación completa (frontend + backend) que permite realizar operaciones CRUD sobre **usuarios** y **productos**, además de generar reportes en PDF.
+
+---
+
+## 🛠️ Tecnologías utilizadas
+
+### Backend
+- Node.js
+- Express
+- File System (`fs`)
+- JSON como base de datos
+- CORS
+
+### Frontend
+- React (con Vite)
+- Axios
+- PrimeReact
+- jsPDF (para exportar a PDF)
+
+---
+
+## 📂 Estructura del proyecto
+
+crud-fullstack/
+├── backend/
+│ ├── data/
+│ │ ├── productos.json
+│ │ └── usuarios.json
+│ ├── controllers/
+│ │ ├── productos.controller.js
+│ │ └── usuarios.controller.js
+│ ├── routes/
+│ │ ├── productos.routes.js
+│ │ └── usuarios.routes.js
+│ ├── server.js
+│ └── package.json
+├── frontend/
+│ ├── src/
+│ │ ├── components/
+│ │ │ ├── Productos.jsx
+│ │ │ └── Usuarios.jsx
+│ │ ├── services/
+│ │ │ └── api.js
+│ │ ├── App.jsx
+│ │ └── main.jsx
+│ └── package.json
+
+yaml
+Copiar
+Editar
+
+---
+
+## 🚀 Cómo ejecutar el proyecto
+
+### 1. Backend
+
+```bash
+cd backend
+npm install
+npm run dev
+El backend corre en http://localhost:3000
+
+2. Frontend
+bash
+Copiar
+Editar
+cd frontend
+npm install
+npm run dev
+El frontend corre en http://localhost:5173
+
+🔗 Funcionalidades
+✔️ CRUD Usuarios
+Mostrar lista
+
+Crear, editar y eliminar
+
+Validaciones
+
+Exportar listado en PDF (nombre, email, edad)
+
+✔️ CRUD Productos
+Mostrar lista
+
+Crear, editar y eliminar
+
+Exportar listado en PDF (nombre, precio)
+
+🖌️ Estilos con PrimeReact
+Inputs, tablas, botones visualmente agradables.
+
+Interacción clara y diseño organizado.
+
+📄 Exportar PDF
+Desde el frontend, se puede generar y descargar un PDF con el listado de:
+
+Usuarios
+
+Productos
+
+Usamos jsPDF para generar archivos visualmente ordenados.
+
+👨‍🏫 Autor
+Nombre: Agustin Fasano
+
+Comisión: A
+
+Año: 2025
