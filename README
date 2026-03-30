@@ -22,7 +22,7 @@ Una aplicación integral **End-to-End** que permite la gestión centralizada de 
 * **Interfaz Profesional:** Diseño organizado y responsive utilizando bibliotecas de componentes industriales.
 
 ### 📁 Arquitectura del Ecosistema
-```yaml
+```
 crud-fullstack/
 ├── backend/            # API REST y Lógica de Negocio
 │   ├── controllers/    # Procesamiento de peticiones
@@ -31,3 +31,18 @@ crud-fullstack/
 └── frontend/           # Interfaz de Usuario (SPA)
     ├── src/components/ # Componentes modulares (React)
     └── src/services/   # Cliente API (Axios)
+```
+### 🚀 Instalación y Despliegue
+* **Servidor (Backend):**
+```
+cd backend && npm install
+npm run dev # Puerto 3000
+```
+* **Cliente (Frontend):**
+
+```
+cd frontend && npm install
+npm run dev # Puerto 5173
+```
+Desarrollado por Agustín Alejandro Fasano
+Técnico Superior en Desarrollo de Software
