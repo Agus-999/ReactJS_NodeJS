@@ -1,116 +1,33 @@
----
+# 💻 Fullstack Management System (React + Node.js)
 
-## ✅ 2. README para **Práctico Integrador: ReactJS + NodeJS (Fullstack)**
+Una aplicación integral **End-to-End** que permite la gestión centralizada de usuarios y productos. Este proyecto demuestra la integración fluida entre un ecosistema Frontend moderno y una API REST robusta, incluyendo funcionalidades de generación de reportes dinámicos.
 
-```markdown
-# 🧑‍💻 Práctico Integrador: CRUD Fullstack (React + Node.js)
+### 🛠️ Stack Tecnológico
 
-Este proyecto es una aplicación completa (frontend + backend) que permite realizar operaciones CRUD sobre **usuarios** y **productos**, además de generar reportes en PDF.
+**Frontend (Client):**
+* **React.js** (Vite) para una interfaz reactiva y rápida.
+* **PrimeReact:** Implementación de componentes de UI de alta calidad.
+* **Axios:** Gestión de peticiones asíncronas al servidor.
+* **jsPDF:** Motor de generación de documentos PDF en el cliente.
 
----
+**Backend (Server):**
+* **Node.js & Express:** Arquitectura de servidor escalable.
+* **CORS:** Configuración de seguridad para peticiones entre dominios.
+* **File System (JSON DB):** Persistencia de datos eficiente mediante archivos estructurados.
 
-## 🛠️ Tecnologías utilizadas
+### 🌟 Funcionalidades Destacadas
+* **Operaciones CRUD Completas:** Gestión total de entidades (Usuarios y Productos) con persistencia en tiempo real.
+* **Sistema de Reportes:** Generación automática de listados en formato **PDF** para auditoría y descarga.
+* **Validaciones Avanzadas:** Control de integridad de datos tanto en cliente como en servidor.
+* **Interfaz Profesional:** Diseño organizado y responsive utilizando bibliotecas de componentes industriales.
 
-### Backend
-- Node.js
-- Express
-- File System (`fs`)
-- JSON como base de datos
-- CORS
-
-### Frontend
-- React (con Vite)
-- Axios
-- PrimeReact
-- jsPDF (para exportar a PDF)
-
----
-
-## 📂 Estructura del proyecto
-
+### 📁 Arquitectura del Ecosistema
+```yaml
 crud-fullstack/
-├── backend/
-│ ├── data/
-│ │ ├── productos.json
-│ │ └── usuarios.json
-│ ├── controllers/
-│ │ ├── productos.controller.js
-│ │ └── usuarios.controller.js
-│ ├── routes/
-│ │ ├── productos.routes.js
-│ │ └── usuarios.routes.js
-│ ├── server.js
-│ └── package.json
-├── frontend/
-│ ├── src/
-│ │ ├── components/
-│ │ │ ├── Productos.jsx
-│ │ │ └── Usuarios.jsx
-│ │ ├── services/
-│ │ │ └── api.js
-│ │ ├── App.jsx
-│ │ └── main.jsx
-│ └── package.json
-
-yaml
-Copiar
-Editar
-
----
-
-## 🚀 Cómo ejecutar el proyecto
-
-### 1. Backend
-
-```bash
-cd backend
-npm install
-npm run dev
-El backend corre en http://localhost:3000
-
-2. Frontend
-bash
-Copiar
-Editar
-cd frontend
-npm install
-npm run dev
-El frontend corre en http://localhost:5173
-
-🔗 Funcionalidades
-✔️ CRUD Usuarios
-Mostrar lista
-
-Crear, editar y eliminar
-
-Validaciones
-
-Exportar listado en PDF (nombre, email, edad)
-
-✔️ CRUD Productos
-Mostrar lista
-
-Crear, editar y eliminar
-
-Exportar listado en PDF (nombre, precio)
-
-🖌️ Estilos con PrimeReact
-Inputs, tablas, botones visualmente agradables.
-
-Interacción clara y diseño organizado.
-
-📄 Exportar PDF
-Desde el frontend, se puede generar y descargar un PDF con el listado de:
-
-Usuarios
-
-Productos
-
-Usamos jsPDF para generar archivos visualmente ordenados.
-
-👨‍🏫 Autor
-Nombre: Agustin Fasano
-
-Comisión: A
-
-Año: 2025
+├── backend/            # API REST y Lógica de Negocio
+│   ├── controllers/    # Procesamiento de peticiones
+│   ├── routes/         # Definición de Endpoints
+│   └── data/           # Capa de persistencia (JSON)
+└── frontend/           # Interfaz de Usuario (SPA)
+    ├── src/components/ # Componentes modulares (React)
+    └── src/services/   # Cliente API (Axios)
